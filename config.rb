@@ -4,10 +4,10 @@ require 'sass-globbing'
 project_type = :stand_alone
 
 # Publishing paths
-http_path = "/"
-http_images_path = "/images"
-http_fonts_path = "/fonts"
-css_dir = "public/stylesheets"
+http_path = "/scribeui-site/"
+http_images_path = "/scribeui-site/images"
+http_fonts_path = "/scribeui-site/fonts"
+css_dir = "public/scribeui-site/stylesheets"
 
 # Local development paths
 sass_dir = "sass"
