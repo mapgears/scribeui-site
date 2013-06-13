@@ -4,7 +4,7 @@
   <title><![CDATA[Scribe UI]]></title>
   <link href="http://mapgears.github.io/scribeui-site/atom.xml" rel="self"/>
   <link href="http://mapgears.github.io/scribeui-site/"/>
-  <updated>2013-06-13T10:45:35-04:00</updated>
+  <updated>2013-06-13T13:19:51-04:00</updated>
   <id>http://mapgears.github.io/scribeui-site/</id>
   <author>
     <name><![CDATA[Jessica Lapointe]]></name>
@@ -52,6 +52,27 @@ This is the most important part of the app. The toolbar on top of the text box c
 <p>When a user clicks on one of the settings option, or on the variable button, a panel opens that allows the edition of that particular setting.</p>
 
 <p>A big thanks to the people from <a href="http://www.balsamiq.com/products/mockups">Balsamiq</a> who gave a licence for their mockups software to this GSoC project !</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Start of the project]]></title>
+    <link href="http://mapgears.github.io/scribeui-site/blog/2013/06/10/start/"/>
+    <updated>2013-06-10T11:29:00-04:00</updated>
+    <id>http://mapgears.github.io/scribeui-site/blog/2013/06/10/start</id>
+    <content type="html"><![CDATA[<p>ScribeUI was accepted as a Google Summer of Code 2013 entry with OSGeo!</p>
+
+<p>The beginning of the project so far has been all about preparation. What new functionnalities do we want ? What current functionnality needs to get better ? What is good about the current application, and what needs to be redone ? What are the bugs, and how important are they ?</p>
+
+<p>So before a first version can be released, a few things need to be done. First, GUI Mockups. The main weakness of the application right now is the GUI, and the mockups really help bringing new ideas before doing any coding. The mockups will be up shortly on this blog.</p>
+
+<p>Next, there need to be some rethinking of the code to have it work with modules. That way, implementing new features will be much easier.</p>
+
+<p>Also, two bugs need to be corrected before releasing the project. Both bugs cause loss of work made by the user, that is why they need to be fixed as soon as possible.</p>
+
+<p>And finally, actually implemeting the new GUI as directed by the mockups.</p>
+
+<p>Once all of this is done, the app can be used and tested by anyone interested. Some functionnalities will be missing, but the core will be there.</p>
 ]]></content>
   </entry>
   
