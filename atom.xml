@@ -4,7 +4,7 @@
   <title><![CDATA[Scribe UI]]></title>
   <link href="http://mapgears.github.io/scribeui-site/atom.xml" rel="self"/>
   <link href="http://mapgears.github.io/scribeui-site/"/>
-  <updated>2013-06-11T11:52:30-04:00</updated>
+  <updated>2013-06-13T10:45:35-04:00</updated>
   <id>http://mapgears.github.io/scribeui-site/</id>
   <author>
     <name><![CDATA[Jessica Lapointe]]></name>
@@ -14,11 +14,44 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Test]]></title>
-    <link href="http://mapgears.github.io/scribeui-site/blog/2013/06/11/test/"/>
-    <updated>2013-06-11T11:46:00-04:00</updated>
-    <id>http://mapgears.github.io/scribeui-site/blog/2013/06/11/test</id>
-    <content type="html"><![CDATA[
+    <title type="html"><![CDATA[Mockups]]></title>
+    <link href="http://mapgears.github.io/scribeui-site/blog/2013/06/11/mockups/"/>
+    <updated>2013-06-11T13:46:00-04:00</updated>
+    <id>http://mapgears.github.io/scribeui-site/blog/2013/06/11/mockups</id>
+    <content type="html"><![CDATA[<h2>First Page</h2>
+
+<p><a href="http://mapgears.github.io/scribeui-site/images/FirstOpening.png" title=""><img src="http://mapgears.github.io/scribeui-site/images/FirstOpening.png" /></a></p>
+
+<p>When the app is first opened, the app asks for a workspace to work on. The workspaces allow ScribeUI to be cloud-based, with each user or project having its own workspace.</p>
+
+<h2>Manager</h2>
+
+<p><a href="http://mapgears.github.io/scribeui-site/images/Manager.png" title=""><img src="http://mapgears.github.io/scribeui-site/images/Manager.png" /></a></p>
+
+<p>The manager lists the maps withing the project. The icons will be snapshots of the map. The toolbar at the bottom of the map is accessible from anywhere. The quickview is very useful, as it allows the user to save and quickly get back to certain map extents.</p>
+
+<h2>Editor</h2>
+
+<p><a href="http://mapgears.github.io/scribeui-site/images/Editor.png" title=""><img src="http://mapgears.github.io/scribeui-site/images/Editor.png" /></a>
+This is the most important part of the app. The toolbar on top of the text box contains most tools for the mapfile edition.</p>
+
+<ul>
+<li><p><strong>Layer Groups</strong>: Choose the currently edited layer group from the drop-down. Group order and deletion managed in a pop-up appearing when the user clicks on the icon next to the drop-down.</p></li>
+<li><p><strong>Variables</strong>: Opens a panel on top of the regular editor. It contains the map&rsquo;s variables, if the project is in Scribe.</p></li>
+<li><p><strong>Settings</strong>: This drop-down contains editable sections of the map project.</p></li>
+<li><p><strong>Debug</strong>: The flag icon opens a list of debugs links. Mapfile Result is the outputted mapfile, Scribe logs contains log messages from Scribe and Mapserver Debug contains the debug output from mapserver.</p></li>
+<li><p><strong>Editor Settings</strong>: The gear icon will allow the user to edit the editor&rsquo;s configuration.</p></li>
+<li><p><strong>Swatch Toolbar</strong>: The swatches at the bottom of the editor allow the user to edit the project&rsquo;s colors with a color picker.</p></li>
+</ul>
+
+
+<h2>Editable Panel</h2>
+
+<p><a href="http://mapgears.github.io/scribeui-site/images/Editor_Variables.png" title=""><img src="http://mapgears.github.io/scribeui-site/images/Editor_Variables.png" /></a></p>
+
+<p>When a user clicks on one of the settings option, or on the variable button, a panel opens that allows the edition of that particular setting.</p>
+
+<p>A big thanks to the people from <a href="http://www.balsamiq.com/products/mockups">Balsamiq</a> who gave a licence for their mockups software to this GSoC project !</p>
 ]]></content>
   </entry>
   
