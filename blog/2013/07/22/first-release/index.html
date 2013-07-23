@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Mockups - Scribe UI</title>
+  <title>First Release - Scribe UI</title>
   <meta name="author" content="Jessica Lapointe">
 
   
-  <meta name="description" content="First Page When the app is first opened, the app asks for a workspace to work on. The workspaces allow ScribeUI to be cloud-based, with each user or &hellip;">
+  <meta name="description" content="ScribeUI is a tool meant to help the editing and management of mapfiles, supporting Scribe and Standard mapfile syntax, and basemaps in the near &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://mapgears.github.io/scribeui-site/blog/2013/06/11/mockups">
+  <link rel="canonical" href="http://mapgears.github.io/scribeui-site/blog/2013/07/22/first-release">
   <link href="/scribeui-site/favicon.png" rel="icon">
   <link href="/scribeui-site/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/scribeui-site/atom.xml" rel="alternate" title="Scribe UI" type="application/atom+xml">
@@ -60,7 +60,7 @@
   
   <header>
     
-      <h1 class="entry-title">Mockups</h1>
+      <h1 class="entry-title">First Release</h1>
     
     
       <p class="meta">
@@ -76,7 +76,7 @@
   
 
 
-<time datetime="2013-06-11T13:46:00-04:00" pubdate data-updated="true">Jun 11<span>th</span>, 2013</time>
+<time datetime="2013-07-22T11:29:00-04:00" pubdate data-updated="true">Jul 22<span>nd</span>, 2013</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -85,40 +85,50 @@
   </header>
 
 
-<div class="entry-content"><h2>First Page</h2>
+<div class="entry-content"><p>ScribeUI is a tool meant to help the editing and management of mapfiles, supporting Scribe and Standard mapfile syntax, and basemaps in the near future. In the last few weeks, I worked on the GUI of ScribeUI, trying to make it as good and smooth as possible, and it is now ready to test and try out by the community!</p>
 
-<p><a href="/scribeui-site/images/FirstOpening.png" title=""><img src="/scribeui-site/images/FirstOpening.png" /></a></p>
+<p>Please keep in mind that this is far for complete, but we felt that it was important to release early, as this allows to gather opinions on what the users want and need. Any feedback is welcome, should it be new feature ideas, general comments or bug reports.</p>
 
-<p>When the app is first opened, the app asks for a workspace to work on. The workspaces allow ScribeUI to be cloud-based, with each user or project having its own workspace.</p>
+<p>I would love to see many people play with ScribeUI, but I would advise against doing any critical work for now, as the software might be a bit unstable at times.</p>
 
-<h2>Manager</h2>
+<p>I listed below a few bugs and unfinished tasks we are currently aware of.</p>
 
-<p><a href="/scribeui-site/images/Manager.png" title=""><img src="/scribeui-site/images/Manager.png" /></a></p>
-
-<p>The manager lists the maps withing the project. The icons will be snapshots of the map. The toolbar at the bottom of the map is accessible from anywhere. The quickview is very useful, as it allows the user to save and quickly get back to certain map extents.</p>
-
-<h2>Editor</h2>
-
-<p><a href="/scribeui-site/images/Editor.png" title=""><img src="/scribeui-site/images/Editor.png" /></a>
-This is the most important part of the app. The toolbar on top of the text box contains most tools for the mapfile edition.</p>
+<h2>Work in Progress</h2>
 
 <ul>
-<li><p><strong>Layer Groups</strong>: Choose the currently edited layer group from the drop-down. Group order and deletion managed in a pop-up appearing when the user clicks on the icon next to the drop-down.</p></li>
-<li><p><strong>Variables</strong>: Opens a panel on top of the regular editor. It contains the map&rsquo;s variables, if the project is in Scribe.</p></li>
-<li><p><strong>Settings</strong>: This drop-down contains editable sections of the map project.</p></li>
-<li><p><strong>Debug</strong>: The flag icon opens a list of debugs links. Mapfile Result is the outputted mapfile, Scribe logs contains log messages from Scribe and Mapserver Debug contains the debug output from mapserver.</p></li>
-<li><p><strong>Editor Settings</strong>: The gear icon will allow the user to edit the editor&rsquo;s configuration.</p></li>
-<li><p><strong>Swatch Toolbar</strong>: The swatches at the bottom of the editor allow the user to edit the project&rsquo;s colors with a color picker.</p></li>
+<li>The map list (in the Manager) is just a bunch of blank file icons for now. These will become map snapshots.</li>
+<li>The Scribe syntax errors for now are not clear. This is solved in a new version of Scribe which I will integrate in the next release.</li>
+<li>Basemap support is on hold until next release, it has to be tested more.</li>
+<li>For now only one template is available for each map type.</li>
+<li>It is not yet possible to edit workspace or map name, description or password.</li>
+<li>UI error messages need more work to be clear to the user.</li>
 </ul>
 
 
-<h2>Editable Panel</h2>
+<h2>Bugs</h2>
 
-<p><a href="/scribeui-site/images/Editor_Variables.png" title=""><img src="/scribeui-site/images/Editor_Variables.png" /></a></p>
+<ul>
+<li>The layout was mostly tested in Firefox. Scrollbars and other oddities appear in Chrome.</li>
+<li>Sometimes the backend start giving out errors 500 on open, save, or pretty much any ajax call to the map.</li>
+<li>Long map names don&rsquo;t display very well in the map list</li>
+<li>Resizing the window completely breaks the layout.</li>
+<li>Web browsers&#8217; default handling of ctrl-z results in loss of layer groups.</li>
+<li>It is only possible to clode the secondary editor (map, variable, scales, etc&hellip; ) by selecting the empty option in the select menu.</li>
+<li>The browser font is too small</li>
+</ul>
 
-<p>When a user clicks on one of the settings option, or on the variable button, a panel opens that allows the edition of that particular setting.</p>
 
-<p>A big thanks to the people from <a href="http://www.balsamiq.com/products/mockups">Balsamiq</a> who gave a licence for their mockups software to this GSoC project !</p>
+<h2>Download and Links</h2>
+
+<p>ScribeUI and its installation instructions are available on github: <a href="https://github.com/mapgears/scribeui">https://github.com/mapgears/scribeui</a></p>
+
+<p>The Scribe syntax is described here: <a href="http://www.mapgears.com/en/blog/archive/2013-03-12-scribe">http://www.mapgears.com/en/blog/archive/2013-03-12-scribe</a></p>
+
+<p>Bug reports can be made on the github: <a href="https://github.com/mapgears/scribeui/issues">https://github.com/mapgears/scribeui/issues</a></p>
+
+<p>If you wish to ask a question, you can either comment on this blog post, or contact me personally at <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#58;&#106;&#x6c;&#x61;&#112;&#x6f;&#105;&#x6e;&#x74;&#101;&#64;&#109;&#x61;&#x70;&#103;&#x65;&#x61;&#x72;&#x73;&#46;&#99;&#x6f;&#109;">&#x6a;&#108;&#97;&#112;&#x6f;&#x69;&#x6e;&#116;&#x65;&#x40;&#x6d;&#97;&#112;&#x67;&#101;&#x61;&#114;&#115;&#x2e;&#x63;&#x6f;&#109;</a></p>
+
+<p>Thanks a lot!</p>
 </div>
 
 
@@ -141,7 +151,7 @@ This is the most important part of the app. The toolbar on top of the text box c
   
 
 
-<time datetime="2013-06-11T13:46:00-04:00" pubdate data-updated="true">Jun 11<span>th</span>, 2013</time>
+<time datetime="2013-07-22T11:29:00-04:00" pubdate data-updated="true">Jul 22<span>nd</span>, 2013</time>
       
 
 
@@ -149,7 +159,7 @@ This is the most important part of the app. The toolbar on top of the text box c
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://mapgears.github.io/scribeui-site/blog/2013/06/11/mockups/" data-via="" data-counturl="http://mapgears.github.io/scribeui-site/blog/2013/06/11/mockups/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://mapgears.github.io/scribeui-site/blog/2013/07/22/first-release/" data-via="" data-counturl="http://mapgears.github.io/scribeui-site/blog/2013/07/22/first-release/" >Tweet</a>
   
   
   
@@ -158,10 +168,8 @@ This is the most important part of the app. The toolbar on top of the text box c
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/scribeui-site/blog/2013/06/10/start/" title="Previous Post: Start of the project">&laquo; Start of the project</a>
+        <a class="basic-alignment left" href="/scribeui-site/blog/2013/06/11/mockups/" title="Previous Post: Mockups">&laquo; Mockups</a>
       
-      
-        <a class="basic-alignment right" href="/scribeui-site/blog/2013/07/22/first-release/" title="Next Post: First Release">First Release &raquo;</a>
       
     </p>
   </footer>
@@ -219,8 +227,8 @@ This is the most important part of the app. The toolbar on top of the text box c
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://mapgears.github.io/scribeui-site/blog/2013/06/11/mockups/';
-        var disqus_url = 'http://mapgears.github.io/scribeui-site/blog/2013/06/11/mockups/';
+        var disqus_identifier = 'http://mapgears.github.io/scribeui-site/blog/2013/07/22/first-release/';
+        var disqus_url = 'http://mapgears.github.io/scribeui-site/blog/2013/07/22/first-release/';
         var disqus_script = 'embed.js';
       
     (function () {
